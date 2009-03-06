@@ -8,7 +8,7 @@ License:	GPL
 Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/pkcs11wrap/%{rname}-%{version}.tar.gz
 # Source0-md5:	f1be0bcef765a36e4362342c5df49eef
-URL:		http://http://www.bit4id.org/trac/pykcs11
+URL:		http://www.bit4id.org/trac/pykcs11
 BuildRequires:	autoconf >= 2.59c
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
