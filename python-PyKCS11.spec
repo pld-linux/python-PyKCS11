@@ -6,10 +6,10 @@ Version:	1.2.1
 Release:	2
 License:	GPL
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/pkcs11wrap/%{rname}-%{version}.tar.gz
+Source0:	http://downloads.sourceforge.net/pkcs11wrap/%{rname}-%{version}.tar.gz
 # Source0-md5:	f1be0bcef765a36e4362342c5df49eef
 URL:		http://www.bit4id.org/trac/pykcs11
-BuildRequires:	autoconf >= 2.59c
+BuildRequires:	libstdc++-devel
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
@@ -39,7 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%dir %{python_sitearch}/PyKCS11
-%{python_sitearch}/PyKCS11/*.py[co]
-%attr(755,root,root) %{python_sitearch}/PyKCS11/*.so
-%{python_sitearch}/*.egg-info
+%dir %{py_sitedir}/PyKCS11
+%{py_sitedir}/PyKCS11/*.py[co]
+%attr(755,root,root) %{py_sitedir}/PyKCS11/*.so
+%{py_sitedir}/*.egg-info
