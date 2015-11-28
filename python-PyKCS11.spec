@@ -3,7 +3,7 @@
 Summary:	Full PKCS11 wrapper for Python
 Name:		python-PyKCS11
 Version:	1.2.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/pkcs11wrap/%{rname}-%{version}.tar.gz
