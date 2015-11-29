@@ -9,6 +9,7 @@ Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/pkcs11wrap/%{rname}-%{version}.tar.gz
 # Source0-md5:	f1be0bcef765a36e4362342c5df49eef
 URL:		http://www.bit4id.org/trac/pykcs11
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	libstdc++-devel
 BuildRequires:	python-devel >= 1:2.5
 BuildRequires:	rpm-pythonprov
